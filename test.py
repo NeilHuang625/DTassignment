@@ -1,8 +1,52 @@
 import pandas as pd
+import numpy as np
 
 # Read data
 filing_df = pd.read_csv("filing_behaviour.csv")
 profile_df = pd.read_csv("taxpayer_profiles.csv")
+
+# Data cleaning
+# 1. Check and handle missing values
+print("Missing values in filing_df:")
+print(filing_df.isnull().sum())
+print("\nMissing values in profile_df:")
+print(profile_df.isnull().sum())
+
+# 2. Handle missing values based on ReturnFiled status
+# For records where ReturnFiled is False, PaymentDelayDays and VoluntaryDisclosure should be NA
+# For records where ReturnFiled is True, fill missing values appropriately
+filing_df['PaymentDelayDays'] = filing_df.apply(
+    lambda row: np.nan if not row['ReturnFiled'] else row['PaymentDelayDays'], axis=1
+)
+filing_df['VoluntaryDisclosure'] = filing_df.apply(
+    lambda row: np.nan if not row['ReturnFiled'] else row['VoluntaryDisclosure'], axis=1
+)
+
+# Fill remaining missing values for ReturnFiled=True records
+filing_df.loc[filing_df['ReturnFiled'], 'PaymentDelayDays'] = filing_df.loc[filing_df['ReturnFiled'], 'PaymentDelayDays'].fillna(0)
+filing_df.loc[filing_df['ReturnFiled'], 'VoluntaryDisclosure'] = filing_df.loc[filing_df['ReturnFiled'], 'VoluntaryDisclosure'].fillna(0)
+
+# 3. Handle outliers in numeric columns (only for ReturnFiled=True records)
+def remove_outliers(df, column, n_std):
+    # Only consider records where ReturnFiled is True
+    valid_data = df[df['ReturnFiled']][column].dropna()
+    mean = valid_data.mean()
+    std = valid_data.std()
+    df.loc[df['ReturnFiled'], column] = df.loc[df['ReturnFiled'], column].clip(
+        lower=mean - n_std*std, 
+        upper=mean + n_std*std
+    )
+    return df
+
+# Remove outliers from numeric columns
+numeric_columns = ['PaymentDelayDays', 'EstimatedTax', 'ActualTax']
+for col in numeric_columns:
+    filing_df = remove_outliers(filing_df, col, 3)  # 使用3个标准差作为界限
+
+# 4. Ensure data types are correct
+filing_df['Year'] = filing_df['Year'].astype(int)
+filing_df['ReturnFiled'] = filing_df['ReturnFiled'].astype(int)
+filing_df['VoluntaryDisclosure'] = filing_df['VoluntaryDisclosure'].astype(float)  # Changed to float to handle NaN
 
 # Feature engineering
 missed = filing_df.groupby('TaxpayerID')[
