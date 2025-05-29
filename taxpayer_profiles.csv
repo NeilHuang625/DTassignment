@@ -1,0 +1,101 @@
+TaxpayerID,EntityType,Sector,Location,RegisteredSince,RevenueBand
+TP0001,Company,Construction,Christchurch,2007,100K–200K
+TP0002,SoleTrader,Transport,Auckland,2021,>5M
+TP0003,Company,Professional Services,Hamilton,2001,<100K
+TP0004,Company,Hospitality,Wellington,2016,1M–5M
+TP0005,Company,Professional Services,Wellington,2022,>5M
+TP0006,Trust,Hospitality,Hamilton,2018,200K–500K
+TP0007,Company,Hospitality,Hamilton,2010,200K–500K
+TP0008,SoleTrader,Hospitality,Christchurch,2003,<100K
+TP0009,Trust,Construction,Christchurch,2011,1M–5M
+TP0010,Partnership,Construction,Hamilton,2017,<100K
+TP0011,Trust,Construction,Dunedin,2009,>5M
+TP0012,Partnership,Professional Services,Wellington,2022,<100K
+TP0013,Company,Transport,Wellington,2009,<100K
+TP0014,SoleTrader,Construction,Hamilton,2008,500K–1M
+TP0015,Partnership,Hospitality,Christchurch,2011,100K–200K
+TP0016,Partnership,Transport,Auckland,2019,>5M
+TP0017,SoleTrader,Professional Services,Wellington,2005,500K–1M
+TP0018,Trust,Retail,Dunedin,2007,>5M
+TP0019,Partnership,Construction,Wellington,2001,200K–500K
+TP0020,Trust,Retail,Auckland,2006,1M–5M
+TP0021,Partnership,Hospitality,Hamilton,2012,>5M
+TP0022,Trust,Hospitality,Christchurch,2004,100K–200K
+TP0023,Partnership,Transport,Dunedin,2013,1M–5M
+TP0024,Trust,Retail,Wellington,2004,1M–5M
+TP0025,Trust,Construction,Auckland,2003,100K–200K
+TP0026,SoleTrader,Transport,Hamilton,2019,<100K
+TP0027,Trust,Agriculture,Dunedin,2014,1M–5M
+TP0028,Partnership,Professional Services,Auckland,2021,>5M
+TP0029,Company,Transport,Dunedin,2008,>5M
+TP0030,Partnership,Construction,Christchurch,2013,100K–200K
+TP0031,Trust,Construction,Christchurch,2016,100K–200K
+TP0032,Company,Transport,Christchurch,2020,1M–5M
+TP0033,SoleTrader,Hospitality,Christchurch,2005,1M–5M
+TP0034,Company,Professional Services,Christchurch,2015,<100K
+TP0035,Company,Retail,Christchurch,2007,<100K
+TP0036,SoleTrader,Professional Services,Auckland,2002,>5M
+TP0037,Trust,Construction,Dunedin,2004,100K–200K
+TP0038,Trust,Professional Services,Wellington,2008,1M–5M
+TP0039,Trust,Hospitality,Dunedin,2022,100K–200K
+TP0040,Partnership,Agriculture,Christchurch,2014,1M–5M
+TP0041,Trust,Construction,Wellington,2007,<100K
+TP0042,Partnership,Construction,Dunedin,2017,100K–200K
+TP0043,SoleTrader,Construction,Auckland,2022,>5M
+TP0044,Company,Hospitality,Auckland,2001,200K–500K
+TP0045,Company,Professional Services,Wellington,2008,>5M
+TP0046,Trust,Hospitality,Dunedin,2004,>5M
+TP0047,Trust,Hospitality,Hamilton,2013,100K–200K
+TP0048,Company,Construction,Hamilton,2011,500K–1M
+TP0049,Trust,Agriculture,Auckland,2021,>5M
+TP0050,Company,Construction,Hamilton,2010,<100K
+TP0051,SoleTrader,Hospitality,Wellington,2017,500K–1M
+TP0052,SoleTrader,Agriculture,Wellington,2008,500K–1M
+TP0053,SoleTrader,Construction,Hamilton,2017,<100K
+TP0054,Company,Transport,Dunedin,2000,<100K
+TP0055,SoleTrader,Hospitality,Hamilton,2015,500K–1M
+TP0056,SoleTrader,Agriculture,Auckland,2005,500K–1M
+TP0057,Company,Agriculture,Christchurch,2014,200K–500K
+TP0058,Trust,Transport,Dunedin,2021,>5M
+TP0059,Trust,Hospitality,Wellington,2009,100K–200K
+TP0060,Company,Professional Services,Dunedin,2001,>5M
+TP0061,Partnership,Construction,Auckland,2018,500K–1M
+TP0062,SoleTrader,Construction,Dunedin,2002,100K–200K
+TP0063,Company,Professional Services,Auckland,2021,100K–200K
+TP0064,Trust,Construction,Dunedin,2007,1M–5M
+TP0065,Company,Professional Services,Auckland,2013,>5M
+TP0066,Partnership,Retail,Wellington,2021,>5M
+TP0067,Partnership,Hospitality,Christchurch,2012,100K–200K
+TP0068,Partnership,Agriculture,Christchurch,2002,<100K
+TP0069,Trust,Professional Services,Dunedin,2003,<100K
+TP0070,SoleTrader,Professional Services,Christchurch,2004,200K–500K
+TP0071,Company,Hospitality,Christchurch,2009,100K–200K
+TP0072,Trust,Professional Services,Christchurch,2019,>5M
+TP0073,Company,Transport,Dunedin,2009,>5M
+TP0074,Company,Hospitality,Christchurch,2003,<100K
+TP0075,SoleTrader,Retail,Christchurch,2019,100K–200K
+TP0076,Partnership,Hospitality,Christchurch,2016,500K–1M
+TP0077,Partnership,Construction,Auckland,2020,500K–1M
+TP0078,Partnership,Construction,Auckland,2010,100K–200K
+TP0079,Partnership,Hospitality,Hamilton,2017,>5M
+TP0080,Trust,Professional Services,Auckland,2003,<100K
+TP0081,SoleTrader,Professional Services,Auckland,2011,1M–5M
+TP0082,SoleTrader,Agriculture,Wellington,2001,200K–500K
+TP0083,Partnership,Construction,Christchurch,2006,>5M
+TP0084,SoleTrader,Transport,Auckland,2011,1M–5M
+TP0085,Trust,Professional Services,Wellington,2007,100K–200K
+TP0086,SoleTrader,Agriculture,Auckland,2005,>5M
+TP0087,Partnership,Agriculture,Wellington,2008,100K–200K
+TP0088,Company,Agriculture,Auckland,2015,100K–200K
+TP0089,SoleTrader,Agriculture,Christchurch,2009,100K–200K
+TP0090,SoleTrader,Construction,Wellington,2012,200K–500K
+TP0091,Partnership,Construction,Christchurch,2011,>5M
+TP0092,Trust,Transport,Dunedin,2010,<100K
+TP0093,Company,Retail,Wellington,2018,200K–500K
+TP0094,Company,Construction,Dunedin,2013,200K–500K
+TP0095,Partnership,Agriculture,Dunedin,2016,<100K
+TP0096,Trust,Professional Services,Wellington,2008,<100K
+TP0097,Trust,Construction,Dunedin,2017,>5M
+TP0098,SoleTrader,Retail,Hamilton,2002,>5M
+TP0099,Partnership,Professional Services,Christchurch,2021,<100K
+TP0100,Partnership,Professional Services,Christchurch,2021,500K–1M
